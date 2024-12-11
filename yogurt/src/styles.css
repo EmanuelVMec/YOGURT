@@ -1,0 +1,128 @@
+@import url('https://api.fontshare.com/v2/css?f[]=alpino@700&f[]=clash-display@700&display=swap');
+
+font{
+    font-family: 'Clash Display', sans-serif;
+}
+
+/* Fondo general */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(-45deg, #431ffa, #d8cff9, #f8c7c7, #fa1f1f);
+    font-family: 'Clash Display', sans-serif;
+
+}
+
+/* Fondo borroso */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+/* Logo */
+@keyframes calmFadeInOut {
+    0% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+}
+
+/* Logo */
+.logo {
+    width: 750px;
+    height: auto;
+    margin: 0 auto;
+    animation: calmFadeInOut 5s ease-in-out infinite;
+}
+
+/* Título */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1d4ed8;
+    margin-top: 15px;
+    animation: slideIn 0.8s ease-in-out;
+}
+
+/* Botón */
+.button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: linear-gradient(to right, #3e3bf6, #ef4444);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-family: 'Clash Display', sans-serif;
+
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Animación del logo */
+@keyframes fadeAndZoom {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(0deg);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.2) rotate(15deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
