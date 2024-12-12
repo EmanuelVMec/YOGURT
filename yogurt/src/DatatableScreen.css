@@ -1,7 +1,26 @@
+.datatable-container {
+  max-width: 2900px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.659);
+  overflow: hidden;
+  height: 90vh; /* Ajusta la altura para hacer que el contenedor sea desplazable */
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.362);
+}
+.datatable-footer {
+  margin-top: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+}
 
 /* Header Styles */
 .datatable-header {
-  padding: 20px;
+  padding: 10px;
   background: #ff5e78;
   color: #fff;
   display: flex;
@@ -34,14 +53,16 @@
 
 /* Table Styles */
 .datatable {
-  width: 100%;
+  overflow-y: auto;
+  max-height: 60vh; /* Altura máxima para que se pueda hacer scroll dentro de la tabla */
   border-collapse: collapse;
-  text-align: left;
 }
 
 .datatable thead {
-  background: #4fc3f7;
-  color: #fff;
+  position: sticky;
+  top: 0;
+  background-color: #f5f5f5;
+  z-index: 2;
 }
 
 .datatable th, .datatable td {
@@ -204,11 +225,3 @@
 .add-sample-button:hover {
   animation: button-bounce 0.3s ease-in-out;
 }   
-
-.menu-icons {
-    font-size: 3rem; /* Aumenta el tamaño del ícono */
-  }
-
-  .menu-container .menu-icons {
-    font-size: 3rem; /* Cambia a un tamaño mayor si es necesario */
-  }
