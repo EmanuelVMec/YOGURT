@@ -1,0 +1,214 @@
+
+/* Header Styles */
+.datatable-header {
+  padding: 20px;
+  background: #ff5e78;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.datatable-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.sample-selector {
+  display: flex;
+  align-items: center;
+}
+
+.sample-selector label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.sample-dropdown {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+}
+
+/* Table Styles */
+.datatable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.datatable thead {
+  background: #4fc3f7;
+  color: #fff;
+}
+
+.datatable th, .datatable td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.datatable tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.datatable tr:hover {
+  background: #f1f7ff;
+  transition: background 0.3s ease;
+}
+
+.input-field {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+}
+
+/* Button Styles */
+.action-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.9em;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.action-button.save {
+  background: #4caf50;
+}
+
+.action-button.delete {
+  background: #f44336;
+}
+
+.action-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles */
+.datatable-footer {
+  padding: 20px;
+  background: #4caf50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.add-treatment-button, .save-all-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  color: #fff;
+  background: #00796b;
+  transition: background 0.3s ease;
+}
+
+.add-treatment-button:hover, .save-all-button:hover {
+  background: #004d40;
+}
+
+/* Animations */
+.animated-table {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Agregar muestra section styles */
+.add-sample-container {
+  margin: 20px 0;
+  padding: 15px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-sample-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.add-sample-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.add-sample-input {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.add-sample-input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.add-sample-button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.add-sample-button:hover {
+  background: #0056b3;
+}
+
+.add-sample-button:active {
+  background: #003f8a;
+  transform: scale(0.98);
+}
+
+/* Optional animations */
+@keyframes button-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.add-sample-button:hover {
+  animation: button-bounce 0.3s ease-in-out;
+}   
+
+.menu-icons {
+    font-size: 3rem; /* Aumenta el tamaño del ícono */
+  }
+
+  .menu-container .menu-icons {
+    font-size: 3rem; /* Cambia a un tamaño mayor si es necesario */
+  }
